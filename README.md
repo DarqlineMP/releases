@@ -1,1 +1,100 @@
-# releases
+# DarqlineMP releases
+
+Official downloads of DarqlineMP, a free, non-commercial multiplayer platform for SA DE on Windows.
+
+> **Closed test.** DarqlineMP is in a closed test. Anyone can download it, but the test servers are open by
+> invitation only. The public alpha comes later.
+
+## Install
+
+1. Open the newest **Launcher** release and download `DarqlineMP_<version>_x64-setup.exe`.
+2. Run it. It installs for your Windows user only, in `%LOCALAPPDATA%\DarqlineMP`, and doesn't ask for administrator
+   rights.
+3. Start DarqlineMP. On first start it shows the client license, downloads the DarqlineMP client, finds your SA DE and
+   asks for a nickname.
+
+You need Windows 10 or 11 and your own legal copy of SA DE. The Steam copy is supported. DarqlineMP doesn't distribute
+or change any game files.
+
+From then on, the launcher updates itself and the client. You never need to download anything from this page again.
+
+## “Windows protected your PC”
+
+DarqlineMP files are not signed with a code-signing certificate. Such a certificate would publish the author's real
+name and address, and this is a non-commercial project without a company behind it. Because of that, Windows
+SmartScreen warns you once when you run the downloaded installer. To continue, choose **More info → Run anyway**.
+
+Before you do, you can check that the installer is genuine (see below). Updates are downloaded and checked by the
+launcher itself and don't trigger this warning.
+
+## Check a download
+
+Every release lists the SHA-256 of its files in `SHA256SUMS`. In PowerShell:
+
+```powershell
+Get-FileHash .\DarqlineMP_<version>_x64-setup.exe -Algorithm SHA256
+```
+
+The hash must match the line in `SHA256SUMS`.
+
+Everything DarqlineMP publishes is also signed with the project's [minisign](https://jedisct1.github.io/minisign/) key:
+
+```
+RWRqpLwd08q7pLgX9ahLFW6lhFohMXCfzLAgo23LJ75qTaforf2W1U6b
+```
+
+To check the installer with its signature:
+
+```
+minisign -Vm DarqlineMP_<version>_x64-setup.exe -P RWRqpLwd08q7pLgX9ahLFW6lhFohMXCfzLAgo23LJ75qTaforf2W1U6b
+```
+
+The launcher checks the same key before it installs any client or launcher update, and refuses anything else.
+
+## What the releases contain
+
+| Release | Contents |
+|---|---|
+| `launcher-v<version>` | The installer, its `.minisig` signature and `SHA256SUMS` |
+| `client-v<version>` | The client files, each named by its SHA-256. The launcher downloads them; you don't need to |
+
+## What DarqlineMP does and doesn't do
+
+- It loads the DarqlineMP client into SA DE when you start the game from the launcher. It never changes game files.
+- It installs no drivers, services or startup entries and collects no data. Crash reports are saved on your computer
+  only.
+- The launcher connects only to `*.darqline.com` and to the servers you join. Client files come from this page.
+
+## Only official sources
+
+Download DarqlineMP only from this page or from links on `darqline.com`. Repackaged or unofficial builds aren't
+supported, aren't allowed by the client license, and may be malware.
+
+## Antivirus warnings
+
+A launcher that loads a library into a game can look suspicious to antivirus software, especially when it isn't
+signed. Builds are sent to Microsoft for false-positive analysis before release. If your antivirus quarantines a
+DarqlineMP file:
+
+1. Check the file's SHA-256 against `SHA256SUMS`.
+2. Open an issue with the hash and the name of the detection.
+
+Please don't turn your antivirus off. Add an exclusion for the DarqlineMP folder only as a last resort, after
+checking the hash.
+
+## Report a problem
+
+Open an issue here and include:
+
+- the launcher and client versions (Settings → About);
+- your SA DE version;
+- the log files from `%LOCALAPPDATA%\DarqlineMP\Logs`.
+
+Report security issues privately to `security@darqline.com`, not in public issues.
+
+## Licenses
+
+- The launcher is open source under MPL-2.0. Its source code will be published with the public alpha.
+- The client is closed source under the DarqlineMP Client License. The launcher shows the license before installing,
+  and each client release includes it.
+- Third-party components keep their own licenses, listed in the notices shipped with each release.
