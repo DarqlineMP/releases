@@ -1,6 +1,7 @@
 # DarqlineMP releases
 
-Official downloads of DarqlineMP, a free, non-commercial multiplayer platform for SA DE on Windows.
+Official downloads of DarqlineMP, a free, non-commercial multiplayer platform for
+Grand Theft Auto: San Andreas – The Definitive Edition on Windows.
 
 > **Closed test.** DarqlineMP is in a closed test. Anyone can download it, but the test servers are open by
 > invitation only. The public alpha comes later.
@@ -10,10 +11,10 @@ Official downloads of DarqlineMP, a free, non-commercial multiplayer platform fo
 1. Open the newest **Launcher** release and download `DarqlineMP_<version>_x64-setup.exe`.
 2. Run it. It installs for your Windows user only, in `%LOCALAPPDATA%\DarqlineMP`, and doesn't ask for administrator
    rights.
-3. Start DarqlineMP. On first start it shows the client license, downloads the DarqlineMP client, finds your SA DE and
+3. Start DarqlineMP. On first start it shows the client license, downloads the DarqlineMP client, finds the game and
    asks for a nickname.
 
-You need Windows 10 or 11 and your own legal copy of SA DE. The Steam copy is supported. DarqlineMP doesn't distribute
+You need Windows 10 or 11 and your own legal copy of the game. The Steam copy is supported. DarqlineMP doesn't distribute
 or change any game files.
 
 From then on, the launcher updates itself and the client. You never need to download anything from this page again.
@@ -60,14 +61,15 @@ The launcher checks the same key before it installs any client or launcher updat
 
 ## What DarqlineMP does and doesn't do
 
-- It loads the DarqlineMP client into SA DE when you start the game from the launcher. It never changes game files.
-- It installs no drivers, services or startup entries and collects no data. Crash reports are saved on your computer
-  only.
-- The launcher connects only to `*.darqline.com` and to the servers you join. Client files come from this page.
+- It loads the DarqlineMP client into the game when you start it from the launcher. It never changes game files.
+- It installs no drivers, services or startup entries. Crash reports stay on your computer and are never sent
+  automatically.
+- The launcher connects to DarqlineMP services, GitHub to download release files, and the servers you join. What
+  this processes is listed in the [Privacy Notice](https://darqline.com/privacy/).
 
 ## Only official sources
 
-Download DarqlineMP only from this page or from links on `darqline.com`. Repackaged or unofficial builds aren't
+Download DarqlineMP only from this page or from links on [darqline.com](https://darqline.com/). Repackaged or unofficial builds aren't
 supported, aren't allowed by the client license, and may be malware.
 
 ## Antivirus warnings
@@ -86,7 +88,7 @@ checking the hash.
 ## Report a problem
 
 [Open an issue](https://github.com/DarqlineMP/releases/issues/new/choose). The form asks for what we need.
-Questions and ideas go to [Discussions](https://github.com/DarqlineMP/discussions).
+Questions and ideas go to [Discussions](https://github.com/DarqlineMP/releases/discussions).
 
 Report security issues privately to `security@darqline.com`, not in public issues.
 
@@ -96,3 +98,9 @@ Report security issues privately to `security@darqline.com`, not in public issue
 - The client is closed source under the DarqlineMP Client License. The launcher shows the license before installing,
   and each client release includes it.
 - Third-party components keep their own licenses, listed in the notices shipped with each release.
+
+---
+
+DarqlineMP is an independent, non-commercial project. It is not affiliated with, endorsed or sponsored by Rockstar
+Games or Take-Two Interactive. Grand Theft Auto and Grand Theft Auto: San Andreas are trademarks of Take-Two
+Interactive Software, Inc. You need your own legal copy of the game to use DarqlineMP.
