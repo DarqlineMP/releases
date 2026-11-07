@@ -77,18 +77,16 @@ signed. Builds are sent to Microsoft for false-positive analysis before release.
 DarqlineMP file:
 
 1. Check the file's SHA-256 against `SHA256SUMS`.
-2. Open an issue with the hash and the name of the detection.
+2. [Open an antivirus issue](https://github.com/DarqlineMP/releases/issues/new?template=antivirus.yml) with the hash and
+   the name of the detection.
 
 Please don't turn your antivirus off. Add an exclusion for the DarqlineMP folder only as a last resort, after
 checking the hash.
 
 ## Report a problem
 
-Open an issue here and include:
-
-- the launcher and client versions (Settings → About);
-- your SA DE version;
-- the log files from `%LOCALAPPDATA%\DarqlineMP\Logs`.
+[Open an issue](https://github.com/DarqlineMP/releases/issues/new/choose). The form asks for what we need.
+Questions and ideas go to [Discussions](https://github.com/DarqlineMP/discussions).
 
 Report security issues privately to `security@darqline.com`, not in public issues.
 
