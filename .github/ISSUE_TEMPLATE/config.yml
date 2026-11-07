@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://darqline.com/security/
+    about: Report it privately by email, not in a public issue.
+  - name: Questions and ideas
+    url: https://github.com/DarqlineMP/releases/discussions
+    about: Ask for help, suggest features, show your server or game mode.
+  - name: Discord
+    url: https://discord.gg/BmXUarnZkZ
+    about: Chat with players and testers.

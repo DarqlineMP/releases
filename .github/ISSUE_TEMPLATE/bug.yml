@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in the game, the launcher or on a server doesn't work.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security issues go privately to `security@darqline.com`, not here. Questions and ideas go to Discussions.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Where does it happen?
+      options:
+        - In game
+        - Launcher or updates
+        - On a specific server or game mode
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Launcher and client versions
+      description: Settings → About in the launcher.
+      placeholder: launcher 0.1.0, client 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: SA DE version and store
+      placeholder: 1.112, Steam
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Server
+      description: The server address, or "none" if it happens without joining a server.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Join the server
+        2. Enter a car
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Logs and crash report
+      description: |
+        Drag in the newest log from `%LOCALAPPDATA%\DarqlineMP\Logs`. If the game crashed, also add `report.json` and `client.log` from the newest folder in `%LOCALAPPDATA%\DarqlineMP\Crashes`. Don't attach `crash.dmp`; we'll ask for it if we need it. Logs can contain your nickname, server addresses and Windows user name, so check them before posting.

@@ -1,0 +1,39 @@
+name: Antivirus detection
+description: Your antivirus flagged or removed a DarqlineMP file.
+labels: [antivirus]
+body:
+  - type: input
+    id: antivirus
+    attributes:
+      label: Antivirus and its version
+      placeholder: Microsoft Defender, 1.421.x
+    validations:
+      required: true
+  - type: input
+    id: detection
+    attributes:
+      label: Detection name
+      placeholder: Trojan:Win32/...
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: File name and DarqlineMP version
+      placeholder: DarqlineMP_0.1.0_x64-setup.exe
+    validations:
+      required: true
+  - type: input
+    id: sha256
+    attributes:
+      label: SHA-256 of the file
+      description: "PowerShell: Get-FileHash <file> -Algorithm SHA256"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Check
+      options:
+        - label: The hash matches the line in SHA256SUMS of the release.
+          required: true
