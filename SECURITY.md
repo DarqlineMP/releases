@@ -29,7 +29,8 @@ publish your findings 90 days after your report, or earlier once a fix is releas
 
 - servers run by third parties: report to their operators;
 - SA DE itself and its rights holders' services;
-- the platforms DarqlineMP uses (GitHub, Cloudflare, OVHcloud, Proton): report to them under their own programs;
+- the platforms DarqlineMP uses, such as GitHub, Cloudflare and its hosting and email providers: report to them under
+  their own programs;
 - denial-of-service and load testing, spam, social engineering and physical attacks;
 - reports without a security impact, such as missing hardening headers on static pages.
 
