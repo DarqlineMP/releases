@@ -21,12 +21,10 @@ From then on, the launcher updates itself and the client. You never need to down
 
 ## “Windows protected your PC”
 
-DarqlineMP files are not signed with a code-signing certificate. Such a certificate would publish the author's real
-name and address, and this is a non-commercial project without a company behind it. Because of that, Windows
-SmartScreen warns you once when you run the downloaded installer. To continue, choose **More info → Run anyway**.
+DarqlineMP is not Authenticode-signed yet, so Windows may show a SmartScreen warning the first time you run the
+installer. Before continuing, check the installer as described below. Then choose **More info → Run anyway**.
 
-Before you do, you can check that the installer is genuine (see below). Updates are downloaded and checked by the
-launcher itself and don't trigger this warning.
+Updates are downloaded and checked by the launcher itself and don't show this warning.
 
 ## Check a download
 
@@ -94,7 +92,7 @@ Report security issues privately to `security@darqline.com`, not in public issue
 
 ## Licenses
 
-- The launcher is open source under MPL-2.0. Its source code will be published with the public alpha.
+- The launcher is licensed under MPL-2.0. Its source code will be published with the public alpha.
 - The client is closed source under the DarqlineMP Client License. The launcher shows the license before installing,
   and each client release includes it.
 - Third-party components keep their own licenses, listed in the notices shipped with each release.
