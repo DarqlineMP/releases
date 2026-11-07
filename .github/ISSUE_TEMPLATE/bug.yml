@@ -28,7 +28,8 @@ body:
   - type: input
     id: game
     attributes:
-      label: SA DE version and store
+      label: Game version and store
+      description: "Your copy of Grand Theft Auto: San Andreas – The Definitive Edition. The launcher shows its version in Settings → Installation → Change."
       placeholder: 1.112, Steam
     validations:
       required: true
