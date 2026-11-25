@@ -3,8 +3,9 @@
 Official downloads of DarqlineMP, a free, non-commercial multiplayer platform for
 Grand Theft Auto: San Andreas – The Definitive Edition on Windows.
 
-> **Closed test.** DarqlineMP is in a closed test. Anyone can download it, but the test servers are open by
-> invitation only. The public alpha comes later.
+> **Open technical test.** Anyone can download DarqlineMP and join the test server, with no application, invitation
+> or Discord account needed. This is an early build: expect bugs, server restarts and progress resets. The public
+> alpha comes later.
 
 ## Install
 
