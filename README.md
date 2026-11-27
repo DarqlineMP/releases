@@ -37,7 +37,7 @@ Get-FileHash .\DarqlineMP_<version>_x64-setup.exe -Algorithm SHA256
 
 The hash must match the line in `SHA256SUMS`.
 
-Everything DarqlineMP publishes is also signed with the project's [minisign](https://jedisct1.github.io/minisign/) key:
+The project signs client manifests and launcher installers with [minisign](https://jedisct1.github.io/minisign/). Its public key:
 
 ```
 RWRqpLwd08q7pLgX9ahLFW6lhFohMXCfzLAgo23LJ75qTaforf2W1U6b
