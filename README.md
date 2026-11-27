@@ -3,9 +3,9 @@
 Official downloads of DarqlineMP, a free, non-commercial multiplayer platform for
 Grand Theft Auto: San Andreas – The Definitive Edition on Windows.
 
-> **Open technical test.** Anyone can download DarqlineMP and join the test server, with no application, invitation
-> or Discord account needed. This is an early build: expect bugs, server restarts and progress resets. The public
-> alpha comes later.
+> **Public alpha.** Anyone can download DarqlineMP and join the official server, with no application, invitation or
+> Discord account needed. Expect bugs, server restarts and progress resets. To host a server or write game modes, see
+> the [documentation](https://docs.darqline.com/).
 
 ## Install
 
@@ -93,7 +93,7 @@ Report security issues privately to `security@darqline.com`, not in public issue
 
 ## Licenses
 
-- The launcher is licensed under MPL-2.0. Its source code will be published with the public alpha.
+- The launcher is open source under MPL-2.0: [DarqlineMP/launcher](https://github.com/DarqlineMP/launcher).
 - The client is closed source under the DarqlineMP Client License. The launcher shows the license before installing,
   and each client release includes it.
 - Third-party components keep their own licenses, listed in the notices shipped with each release.
